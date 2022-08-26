@@ -2,28 +2,29 @@ package org.iftm.primeiroSpringBoot.entity;
 
 public class Calculadora {
 
-	private double resultado;
+	private int resultado;
 	
 
 
-	public void somar(double num1,double num2){
+	public void somar(int num1,int num2){
 		resultado = num1 + num2;
 	}
 	
-	public void subtrair(double num1,double num2){
+	public void subtrair(int num1,int num2){
 		resultado = num1 - num2;
 	}
 	
-	public void multiplicar(double num1,double num2){
+	public void multiplicar(int num1,int num2){
 		resultado = num1 * num2;
+	
 		
 	}
 	
-	public void dividir(double num1,double num2){
+	public void dividir(int num1,int num2){
 		resultado = num1 / num2;
 	}
 	
-	public double getResultado(double num1,double num2){
+	public int getResultado(){
 		return resultado;
 	}
 	
