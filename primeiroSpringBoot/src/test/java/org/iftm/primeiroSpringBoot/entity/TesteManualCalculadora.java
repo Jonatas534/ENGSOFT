@@ -9,13 +9,13 @@ public class TesteManualCalculadora {
 		Calculadora calculadora = new Calculadora();
 		//definir a variáveis de entrada e resultado;
 		//Entradas necessárias para o teste:
-		double entradaNumero1 = 10;
-		double entradaNumero2 = 5;
+		int entradaNumero1 = 10;
+		int entradaNumero2 = 5;
 		//saída Esperada:
-		double resultadoEsperado= 15;
+		int resultadoEsperado= 15;
 		//2.parte:executar a função a ser testada;
 		calculadora.somar(entradaNumero1,entradaNumero2);
-		double resultadoObitido = calculadora.getResultado(entradaNumero1, entradaNumero2);
+		int resultadoObitido = calculadora.getResultado();  
 		//3.parte:verficar o resultado;
 		if (resultadoEsperado == resultadoObitido){
 			System.out.println("passou no teste");
