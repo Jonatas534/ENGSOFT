@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 class AvaliadorTest {
 
 	@Test
-	public void testarMaiorLanceSemOrdem() {
+	public void testarMaiorLanceComOrdem() {
 		Usuario joao = new Usuario("João");
 		Usuario jose = new Usuario("Jose");
 		Usuario maria = new Usuario("Maria");
@@ -16,9 +16,10 @@ class AvaliadorTest {
 		Avaliador avaliador = new Avaliador();
 		
 		//Criar lances
+		leiao.propoe(new Lance(maria, 250));
 		leiao.propoe(new Lance(joao, 300));
 		leiao.propoe(new Lance(jose, 400));
-		leiao.propoe(new Lance(maria, 250));
+
 		
 		
 		//Execução
